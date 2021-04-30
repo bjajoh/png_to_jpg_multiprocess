@@ -1,4 +1,4 @@
-# png_to_jpg
+# Multiprocess PNG to JPG converter
 A simple conversion scripts for png to jpg including progress bar and eta.
 
 Converting the whole MSCOCO dataset in 15 minutes.
