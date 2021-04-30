@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 from glob import glob                                                           
 import cv2 
