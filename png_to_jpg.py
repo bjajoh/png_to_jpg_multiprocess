@@ -11,7 +11,7 @@ from tqdm import *
 pngs = glob('./*.png')
 
 #convert the image and write it do drive
-def _foo(j):
+def convert_png(j):
     img = cv2.imread(j)
     cv2.imwrite(j[:-3] + 'jpg', img)
 
@@ -19,5 +19,5 @@ if __name__ == '__main__':
     #6 threads parallelized map loop
     with Pool(processes=6) as p:
          with tqdm(total=len(pngs)) as pbar:
-            for i, _ in enumerate(p.imap_unordered(_foo, pngs)):
+            for i, _ in enumerate(p.imap_unordered(convert_png, pngs)):
                 pbar.update()
